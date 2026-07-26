@@ -82,12 +82,12 @@ public record ConfigCodec(boolean enabled, Toggles toggles, Scales scales, int s
             Codec.STRING.fieldOf("o__").orElse(C2).forGetter(Scales::c2),
             Codec.STRING.fieldOf("d__").orElse(C3).forGetter(Scales::c3),
             Codec.STRING.fieldOf("v__").orElse(C4).forGetter(Scales::c4),
-            Codec.DOUBLE.fieldOf("vertical_multiplier").orElse(1.125).forGetter(Scales::finalMultiplier),
-            Codec.DOUBLE.fieldOf("erosion_scale").orElse(0.25).forGetter(Scales::erosionScale),
+            Codec.DOUBLE.fieldOf("vertical_multiplier").orElse(2.5).forGetter(Scales::finalMultiplier),
+            Codec.DOUBLE.fieldOf("erosion_scale").orElse(0.18).forGetter(Scales::erosionScale),
             Codec.DOUBLE.fieldOf("ocean_depth").orElse(-0.15).forGetter(Scales::ocean),
             Codec.DOUBLE.fieldOf("deep_ocean_depth").orElse(-0.45).forGetter(Scales::deepOcean)
         ).apply(instance, Scales::new));
-        public static final Scales DEFAULT = new Scales(1.125, 0.25, -0.15, -0.45);
+        public static final Scales DEFAULT = new Scales(2.5, 0.18, -0.15, -0.45);
 
         public Scales(double finalMultiplier, double erosionScale, double ocean, double deepOcean) {
             this(C1, C2, C3, C4, finalMultiplier, erosionScale, ocean, deepOcean);

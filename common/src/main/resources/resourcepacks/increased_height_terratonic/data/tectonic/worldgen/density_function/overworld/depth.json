@@ -3,9 +3,9 @@
   "argument1": {
     "type": "minecraft:y_clamped_gradient",
     "from_y": -144,
-    "to_y": 432,
+    "to_y": 864,
     "from_value": 1.5,
-    "to_value": -1.26
+    "to_value": -3.33
   },
   "argument2": "tectonic:overworld/spline/offset"
 }

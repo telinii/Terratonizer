@@ -35,7 +35,14 @@
         "argument2": "minecraft:overworld/caves/spaghetti_roughness_function"
       }
     },
-    "argument2": "tectonic:overworld/lava_rivers"
+    "argument2": {
+      "type": "minecraft:range_choice",
+      "input": "tectonic:overworld/lava_rivers",
+      "min_inclusive": -1000000,
+      "max_exclusive": 0,
+      "when_in_range": "tectonic:overworld/lava_rivers",
+      "when_out_of_range": 1000.0
+    }
   },
   "argument2": {
     "type": "minecraft:range_choice",

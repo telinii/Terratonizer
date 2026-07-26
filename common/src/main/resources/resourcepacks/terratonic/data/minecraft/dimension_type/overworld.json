@@ -9,11 +9,11 @@
   "has_ceiling": false,
   "coordinate_scale": 1,
   "ambient_light": 0,
-  "logical_height": 1008,
+  "logical_height": 576,
   "effects": "minecraft:overworld",
   "infiniburn": "#minecraft:infiniburn_overworld",
   "min_y": -144,
-  "height": 1008,
+  "height": 576,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "value": {

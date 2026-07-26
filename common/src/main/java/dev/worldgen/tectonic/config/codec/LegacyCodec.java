@@ -46,11 +46,11 @@ public record LegacyCodec(boolean modEnabled, Features features, Experimental ex
 
     public record Experimental(double horizontalMountainScale, boolean increasedHeight, double terrainScale) {
         public static final Codec<Experimental> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.DOUBLE.fieldOf("horizontal_mountain_scale").orElse(0.25).forGetter(Experimental::horizontalMountainScale),
+            Codec.DOUBLE.fieldOf("horizontal_mountain_scale").orElse(0.18).forGetter(Experimental::horizontalMountainScale),
             Codec.BOOL.fieldOf("increased_height").orElse(false).forGetter(Experimental::increasedHeight),
-            Codec.DOUBLE.fieldOf("terrain_scale").orElse(1.125).forGetter(Experimental::terrainScale)
+            Codec.DOUBLE.fieldOf("terrain_scale").orElse(2.5).forGetter(Experimental::terrainScale)
         ).apply(instance, Experimental::new));
 
-        public static final Experimental DEFAULT = new Experimental(0.25, false, 1.125);
+        public static final Experimental DEFAULT = new Experimental(0.18, false, 2.5);
     }
 }
