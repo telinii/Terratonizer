@@ -47,11 +47,11 @@
     },
     "argument2": "tectonic:overworld_large_biomes/legacy/cliffs"
   },
-  "argument2": {
-    "type": "minecraft:y_clamped_gradient",
-    "from_y": 428,
-    "to_y": 432,
-    "from_value": 1000,
-    "to_value": -1000
-  }
+    "argument2": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 431,
+      "to_y": 432,
+      "from_value": 1000,
+      "to_value": -1000
+    }
 }
