@@ -10,21 +10,21 @@
           "type": "minecraft:add",
           "argument1": {
             "type": "minecraft:mul",
-            "argument1": 4,
+            "argument1": 5,
             "argument2": {
               "type": "minecraft:square",
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "minecraft:cave_layer",
                 "xz_scale": 1,
-                "y_scale": 8
+                "y_scale": 10
               }
             }
           },
           "argument2": {
             "type": "minecraft:add",
             "argument1": "terralith:overworld/reference/cave_cheese",
-            "argument2": 0.1
+            "argument2": -0.05
           }
         },
         "argument2": "minecraft:overworld/caves/entrances"
@@ -50,6 +50,10 @@
     "max_exclusive": 0.03,
     "min_inclusive": -1000000,
     "when_in_range": -1000000,
-    "when_out_of_range": "minecraft:overworld/caves/pillars"
+    "when_out_of_range": {
+      "type": "minecraft:mul",
+      "argument1": "minecraft:overworld/caves/pillars",
+      "argument2": 3
+    }
   }
 }
